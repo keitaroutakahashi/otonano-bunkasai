@@ -1,5 +1,6 @@
 import { Calendar, MapPin } from "lucide-react";
 import { Title } from "./title";
+import { CountAnimation } from "./countAnimation";
 
 export const Overview = () => {
   return (
@@ -29,18 +30,18 @@ export const Overview = () => {
 
         <ul className="grid md:grid-cols-3 grid-cols-2 gap-8">
           <li className="flex flex-col items-center">
-            <p className="text-tertiary font-bold md:text-6xl text-4xl">100</p>
-            <div className="md:mt-4 mt-2"></div>
+            <CountAnimation count={80} />
+            <div className="md:mt-4 mt-2" />
             <p className="text-white font-bold md:text-sm text-xs">観客</p>
           </li>
           <li className="flex flex-col items-center">
-            <p className="text-tertiary font-bold md:text-6xl text-4xl">100</p>
-            <div className="md:mt-4 mt-2"></div>
+            <CountAnimation count={20} />
+            <div className="md:mt-4 mt-2" />
             <p className="text-white font-bold md:text-sm text-xs">出演者</p>
           </li>
           <li className="flex flex-col items-center">
-            <p className="text-tertiary font-bold md:text-6xl text-4xl">100</p>
-            <div className="md:mt-4 mt-2"></div>
+            <CountAnimation count={8} />
+            <div className="md:mt-4 mt-2" />
             <p className="text-white font-bold md:text-sm text-xs">
               出演グループ
             </p>

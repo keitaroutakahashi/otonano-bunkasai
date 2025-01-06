@@ -5,6 +5,7 @@ import { TimeTable } from "./timeTable";
 import { Artists } from "./artists";
 import { Overview } from "./overview";
 import { Sponsors } from "./sponsors";
+import { Flyer } from "./flyer";
 
 export const Index = () => {
   return (
@@ -17,6 +18,8 @@ export const Index = () => {
         <Artists />
         <div className="md:mt-80 mt-60" />
         <TimeTable />
+        <div className="md:mt-80 mt-60" />
+        <Flyer />
         <div className="md:mt-80 mt-60" />
         <Sponsors />
       </main>
