@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import {
   Carousel,
@@ -48,12 +49,12 @@ export const HeroCarousel = () => {
       >
         <CarouselContent>
           {contents.map((item) => (
-            <CarouselItem key={item.img.src} className="relative h-96">
+            <CarouselItem key={item.img.src} className="relative h-96 md:h-152">
               <Image
                 src={item.img.src}
                 fill
                 alt={item.img.alt}
-                className="object-cover h-96 w-full"
+                className="object-cover h-96 md:h-152 w-full"
               />
               <div className="h-full w-full top-0 left-0 absolute bg-[rgba(0,0,0,.3)]"></div>
               <div className="flex justify-center items-center h-full relative">
