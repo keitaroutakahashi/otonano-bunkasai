@@ -40,11 +40,13 @@ export const HeroCarousel = () => {
         opts={{
           loop: true,
         }}
-        plugins={[
-          Autoplay({
-            delay: 5000,
-          }),
-        ]}
+        plugins={
+          [
+            // Autoplay({
+            // delay: 5000,
+            // }),
+          ]
+        }
         className="w-full relative"
       >
         <CarouselContent>
@@ -57,7 +59,7 @@ export const HeroCarousel = () => {
                 className="object-cover h-96 md:h-152 w-full"
               />
               <div className="h-full w-full top-0 left-0 absolute bg-[rgba(0,0,0,.3)]" />
-              <div className="flex justify-center items-center h-full relative">
+              <div className="flex items-end pl-10 pb-24 md:pl-20 h-full relative">
                 {item.content()}
               </div>
               <div className="h-40 w-full bottom-0 left-0 absolute bg-gradient-to-t from-[rgb(25,28,33)]" />
