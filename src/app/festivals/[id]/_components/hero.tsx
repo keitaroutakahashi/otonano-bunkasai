@@ -18,7 +18,7 @@ export const Hero = () => {
           </p>
           <p className="mt-5 text-sm md:text-base">第3回大人の文化祭</p>
         </div>
-        <div className="h-20 w-full bottom-0 left-0 absolute bg-gradient-to-t from-[rgb(25,28,33)]"></div>
+        <div className="h-20 w-full bottom-0 left-0 absolute bg-gradient-to-t from-[rgb(25,28,33)]" />
       </div>
     </div>
   );

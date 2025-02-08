@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
@@ -8,11 +7,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import type { CarouselApi } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 import { useEffect, useState } from "react";
-import { type CarouselApi } from "@/components/ui/carousel";
-import { HeroCarouselDot } from "./heroCarouselDot";
 import { contents } from "./heroCarouselContents";
+import { HeroCarouselDot } from "./heroCarouselDot";
 
 export const HeroCarousel = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -56,11 +56,11 @@ export const HeroCarousel = () => {
                 alt={item.img.alt}
                 className="object-cover h-96 md:h-152 w-full"
               />
-              <div className="h-full w-full top-0 left-0 absolute bg-[rgba(0,0,0,.3)]"></div>
+              <div className="h-full w-full top-0 left-0 absolute bg-[rgba(0,0,0,.3)]" />
               <div className="flex justify-center items-center h-full relative">
                 {item.content()}
               </div>
-              <div className="h-40 w-full bottom-0 left-0 absolute bg-gradient-to-t from-[rgb(25,28,33)]"></div>
+              <div className="h-40 w-full bottom-0 left-0 absolute bg-gradient-to-t from-[rgb(25,28,33)]" />
             </CarouselItem>
           ))}
         </CarouselContent>

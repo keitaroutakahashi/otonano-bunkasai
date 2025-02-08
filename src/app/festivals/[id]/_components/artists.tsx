@@ -8,7 +8,13 @@ export const Artists = () => {
       <div className="mt-20" />
       <ul className="grid md:grid-cols-3 grid-cols-2">
         {Array.from({ length: 4 }).map((_, i) => (
-          <li key={i} className="relative aspect-video">
+          <li
+            key={`${_}-${
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+              i
+            }`}
+            className="relative aspect-video"
+          >
             <Image
               src="/images/hero-01.jpg"
               fill
