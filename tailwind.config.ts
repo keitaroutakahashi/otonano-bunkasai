@@ -9,6 +9,7 @@ export default {
         roboto: ["var(--font-roboto)"],
       },
       height: {
+        "110": "28rem",
         "152": "38rem",
       },
       colors: {

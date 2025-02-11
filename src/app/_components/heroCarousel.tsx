@@ -40,23 +40,24 @@ export const HeroCarousel = () => {
         opts={{
           loop: true,
         }}
-        plugins={
-          [
-            // Autoplay({
-            // delay: 5000,
-            // }),
-          ]
-        }
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]}
         className="w-full relative"
       >
         <CarouselContent>
           {contents.map((item) => (
-            <CarouselItem key={item.img.src} className="relative h-96 md:h-152">
+            <CarouselItem
+              key={item.img.src}
+              className="relative h-110 md:h-152"
+            >
               <Image
                 src={item.img.src}
                 fill
                 alt={item.img.alt}
-                className="object-cover h-96 md:h-152 w-full"
+                className="object-cover"
               />
               <div className="h-full w-full top-0 left-0 absolute bg-[rgba(0,0,0,.3)]" />
               <div className="flex items-end pl-10 pb-24 md:pl-20 h-full relative">
@@ -66,8 +67,8 @@ export const HeroCarousel = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious variant="rectangle" />
-        <CarouselNext variant="rectangle" />
+        <CarouselPrevious variant="rectangle" className="hidden md:block" />
+        <CarouselNext variant="rectangle" className="hidden md:block" />
         <div className="bottom-10 left-1/2 -translate-x-1/2 absolute">
           <HeroCarouselDot
             currentSlideNumber={currentSlideNumber}
