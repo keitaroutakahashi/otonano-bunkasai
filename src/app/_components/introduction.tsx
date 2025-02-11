@@ -1,7 +1,9 @@
 export const Introduction = () => {
   return (
     <section className="px-5 max-w-7xl mx-auto">
-      <h2 className="text-3xl text-white text-center">INTRODUCTION</h2>
+      <h2 className="text-3xl text-white text-center tracking-widest">
+        INTRODUCTION
+      </h2>
       <div className="mt-10" />
       <p className="text-white text-left md:text-center !leading-10 text-sm md:text-base">
         心を揺さぶる音楽と美酒に酔う 「
