@@ -2,20 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   /* color: var(--foreground); */
   /* background: var(--background); */
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+svg {
+  width: auto !important;
+  height: auto !important;
+}
+
+/* custom class */
+.inset-x-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inset-y-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inset-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gradient-rounded-border {
+  position:relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    transition:transform .3s linear, border-width .3s linear, border-radius .3s linear, filter .6s linear;
+    background: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%) border-box border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
+    mask-composite: exclude;
+  }
+}
+
