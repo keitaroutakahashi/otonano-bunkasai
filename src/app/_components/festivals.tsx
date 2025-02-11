@@ -10,7 +10,10 @@ export const Festivals = () => {
       <div className="mt-10" />
       <ul className="relative grid grid-cols-2">
         <li className="relative h-40">
-          <Link href="/festivals/1">
+          <Link
+            href="/festivals/1"
+            className="hover:opacity-60 transition-opacity"
+          >
             <Image
               src="/images/hero-01.jpg"
               fill
@@ -20,7 +23,10 @@ export const Festivals = () => {
           </Link>
         </li>
         <li className="relative h-40">
-          <Link href="/festivals/1">
+          <Link
+            href="/festivals/1"
+            className="hover:opacity-60 transition-opacity"
+          >
             <Image
               src="/images/hero-02.jpg"
               fill
@@ -30,7 +36,10 @@ export const Festivals = () => {
           </Link>
         </li>
         <li className="relative h-40">
-          <Link href="/festivals/1">
+          <Link
+            href="/festivals/1"
+            className="hover:opacity-60 transition-opacity"
+          >
             <Image
               src="/images/hero-03.jpg"
               fill
