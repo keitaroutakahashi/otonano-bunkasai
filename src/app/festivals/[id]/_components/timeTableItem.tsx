@@ -1,17 +1,18 @@
+import type { Festival } from "@/data/festivals";
 import { twMerge } from "tailwind-merge";
 
 type Props = {
   isOdd: boolean;
   time: string;
-  artist: string;
-  song: string;
+  performerName: string;
+  program: Festival["timeTable"][number]["program"];
 };
 
 export const TimeTableItem: React.FC<Props> = ({
   isOdd,
   time,
-  artist,
-  song,
+  performerName,
+  program,
 }) => {
   return (
     <div
@@ -30,13 +31,15 @@ export const TimeTableItem: React.FC<Props> = ({
         <span className="absolute block rounded-full size-3 bg-primary animate-ping" />
         <span className="block rounded-full size-3 bg-primary" />
       </div>
-
       <p className="text-xs font-bold text-secondary">{time}</p>
       <div className="mt-2" />
-      <p className="font-bold text-lg md:text-2xl">{artist}</p>
+      <p className="font-bold text-lg md:text-2xl">{performerName}</p>
       <div className="mt-2">
-        <p className="text-xs md:text-sm text-slate-500">{song}</p>
-        <p className="text-xs md:text-sm text-slate-500">{song}</p>
+        {program.map((item) => (
+          <p key={item.title} className="text-xs md:text-sm text-slate-500">
+            {item.title}
+          </p>
+        ))}
       </div>
     </div>
   );

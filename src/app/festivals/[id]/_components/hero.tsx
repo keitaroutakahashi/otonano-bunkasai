@@ -1,3 +1,4 @@
+import { getFestival } from "@/features/festivals/api/api";
 import Image from "next/image";
 
 export const Hero = () => {

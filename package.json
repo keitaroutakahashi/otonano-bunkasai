@@ -10,6 +10,7 @@
     "lint": "biome lint --write ."
   },
   "dependencies": {
+    "@formkit/tempo": "^0.1.2",
     "@lottiefiles/dotlottie-react": "^0.13.0",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.1",
