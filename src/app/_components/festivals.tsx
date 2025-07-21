@@ -12,39 +12,39 @@ export const Festivals = () => {
         <li className="relative h-40">
           <Link
             href="/festivals/1"
-            className="hover:opacity-60 transition-opacity"
+            className="relative block h-full w-full overflow-hidden"
           >
             <Image
               src="/images/hero-01.jpg"
               fill
               alt="aa"
-              className="object-cover"
+              className="object-cover transition-all duration-300 hover:scale-105 hover:brightness-110"
             />
           </Link>
         </li>
         <li className="relative h-40">
           <Link
             href="/festivals/1"
-            className="hover:opacity-60 transition-opacity"
+            className="relative block h-full w-full overflow-hidden"
           >
             <Image
               src="/images/hero-02.jpg"
               fill
               alt="aa"
-              className="object-cover"
+              className="object-cover transition-all duration-300 hover:scale-105 hover:brightness-110"
             />
           </Link>
         </li>
         <li className="relative h-40">
           <Link
             href="/festivals/1"
-            className="hover:opacity-60 transition-opacity"
+            className="relative block h-full w-full overflow-hidden"
           >
             <Image
               src="/images/hero-03.jpg"
               fill
               alt="aa"
-              className="object-cover"
+              className="object-cover transition-all duration-300 hover:scale-105 hover:brightness-110"
             />
           </Link>
         </li>
