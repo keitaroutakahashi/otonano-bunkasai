@@ -1,7 +1,7 @@
 "use client";
 
 import { twMerge } from "tailwind-merge";
-import { contents } from "./heroCarouselContents";
+import { contents } from "@/app/_components/heroCarouselContents";
 
 type Props = {
   currentSlideNumber: number;

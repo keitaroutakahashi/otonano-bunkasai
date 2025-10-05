@@ -1,11 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-body {
-  /* color: var(--foreground); */
-  /* background: var(--background); */
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  /* fontFamily */
+  --font-roboto: "Roboto", sans-serif;
+
+  /* spacing */
+  --spacing-110: 28rem;
+  --spacing-152: 38rem;
+
+  /* colors */
+  --color-background: rgb(25, 28, 33);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-gray: rgba(130, 130, 130, 1);
+  --color-primary: #48cfcb;
+  --color-secondary: #ff7000;
+  --color-tertiary: rgba(158, 55, 130, 1);
 }
 
 @layer base {
@@ -15,8 +24,8 @@ body {
 }
 
 svg {
-  width: auto !important;
-  height: auto !important;
+  width: auto;
+  height: auto;
 }
 
 /* custom class */
@@ -40,8 +49,8 @@ svg {
 }
 
 .gradient-rounded-border {
-  position:relative;
-  &::before{
+  position: relative;
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -50,10 +59,20 @@ svg {
     bottom: 0;
     border-radius: 100%;
     border: 1px solid transparent;
-    transition:transform .3s linear, border-width .3s linear, border-radius .3s linear, filter .6s linear;
-    background: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%) border-box border-box;
-    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box;
+    transition: transform 0.3s linear, border-width 0.3s linear,
+      border-radius 0.3s linear, filter 0.6s linear;
+    background: linear-gradient(
+        135deg,
+        rgb(74, 234, 220) 0%,
+        rgb(151, 120, 209) 20%,
+        rgb(207, 42, 186) 40%,
+        rgb(238, 44, 130) 60%,
+        rgb(251, 105, 98) 80%,
+        rgb(254, 248, 76) 100%
+      )
+      border-box border-box;
+    mask: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0) border-box;
     mask-composite: exclude;
   }
 }
-
