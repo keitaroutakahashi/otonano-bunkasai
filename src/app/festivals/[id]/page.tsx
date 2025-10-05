@@ -1,5 +1,6 @@
 import { Index } from "@/app/festivals/[id]/_components";
 import { getFestival, getFestivals } from "@/features/festivals/api/api";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   const festivals = getFestivals();
@@ -14,11 +15,11 @@ export default async function Page({
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const id = (await params).id;
+  const { id } = await params;
   const festival = getFestival(Number(id));
 
   if (!festival) {
-    return { notFound: true };
+    notFound();
   }
 
   return <Index festival={festival} />;
