@@ -1,13 +1,12 @@
-import { Footer } from "@/components/ui/footer/footer";
-import { Header } from "@/components/ui/header/header";
-import type { Festival } from "@/data/festivals";
 import type { FC } from "react";
-import { Flyer } from "./flyer";
-import { Hero } from "./hero";
-import { Overview } from "./overview";
-import { Performers } from "./performers";
-import { Sponsors } from "./sponsors";
-import { TimeTable } from "./timeTable";
+import { Flyer } from "@/app/festivals/[id]/_components/flyer";
+import { Hero } from "@/app/festivals/[id]/_components/hero";
+import { Overview } from "@/app/festivals/[id]/_components/overview";
+import { Performers } from "@/app/festivals/[id]/_components/performers";
+import { Sponsors } from "@/app/festivals/[id]/_components/sponsors";
+import { TimeTable } from "@/app/festivals/[id]/_components/timeTable";
+import { Footer } from "@/components/ui/footer/footer";
+import type { Festival } from "@/data/festivals";
 
 type Props = {
   festival: Festival;
@@ -16,8 +15,7 @@ type Props = {
 export const Index: FC<Props> = ({ festival }) => {
   return (
     <div className="bg-background">
-      <Header />
-      <Hero />
+      <Hero festival={festival} />
       <main className="py-40 px-5 max-w-7xl mx-auto">
         <Overview festival={festival} />
         <div className="md:mt-80 mt-60" />

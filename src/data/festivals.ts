@@ -1,12 +1,55 @@
-import { PERFORMERS } from "./performers";
-import { VENUE } from "./venue";
+import { PERFORMERS } from "@/data/performers";
+import { VENUE } from "@/data/venue";
 
 export const FESTIVALS = [
   {
     id: 1,
     times: 1,
     status: "finished",
+    title: "1st Festival",
+    titleJa: "第1回大人の文化祭",
+    eventDate: "2023-10-13T00:00:00",
+    performers: PERFORMERS,
+    venue: VENUE[0],
+    overview: {
+      audience: 47,
+      performers: 16,
+      groups: 6,
+    },
+    timeTable: [
+      {
+        id: 1,
+        startTime: "2023-10-13T17:00:00",
+        endTime: "2023-10-13T17:30:00",
+        performer: PERFORMERS[0],
+        program: [
+          {
+            title: "LOVE YOU ONLY",
+          },
+        ],
+      },
+      {
+        id: 2,
+        startTime: "2023-10-13T00:00:00",
+        endTime: "2023-10-13T00:00:00",
+        performer: PERFORMERS[1],
+        program: [
+          {
+            title: "高嶺の花子さん / back number",
+          },
+          {
+            title: "怪獣の花唄",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
+    times: 1,
+    status: "finished",
     title: "Festival 1",
+    titleJa: "第3回大人の文化祭",
     eventDate: "2023-10-13T00:00:00",
     performers: PERFORMERS,
     venue: VENUE[0],

@@ -1,8 +1,8 @@
 import type { Festival } from "@/data/festivals";
 import { format } from "@formkit/tempo";
 import type { FC } from "react";
-import { TimeTableItem } from "./timeTableItem";
-import { Title } from "./title";
+import { TimeTableItem } from "@/app/festivals/[id]/_components/timeTableItem";
+import { Title } from "@/app/festivals/[id]/_components/title";
 
 type Props = {
   festival: Festival;

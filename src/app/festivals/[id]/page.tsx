@@ -1,5 +1,5 @@
+import { Index } from "@/app/festivals/[id]/_components";
 import { getFestival, getFestivals } from "@/features/festivals/api/api";
-import { Index } from "./_components";
 
 export async function generateStaticParams() {
   const festivals = getFestivals();

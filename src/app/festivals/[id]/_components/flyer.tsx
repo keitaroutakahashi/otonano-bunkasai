@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Title } from "./title";
+import { Title } from "@/app/festivals/[id]/_components/title";
 
 export const Flyer = () => {
   return (

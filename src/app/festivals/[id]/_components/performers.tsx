@@ -1,7 +1,7 @@
 import type { Festival } from "@/data/festivals";
 import Image from "next/image";
 import type { FC } from "react";
-import { Title } from "./title";
+import { Title } from "@/app/festivals/[id]/_components/title";
 
 type Props = {
   festival: Festival;

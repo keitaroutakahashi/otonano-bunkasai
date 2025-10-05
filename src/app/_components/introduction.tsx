@@ -5,7 +5,7 @@ export const Introduction = () => {
         INTRODUCTION
       </h2>
       <div className="mt-10" />
-      <p className="text-white text-left md:text-center !leading-10 text-sm md:text-base">
+      <p className="text-white text-left md:text-center leading-10! text-sm md:text-base">
         心を揺さぶる音楽と美酒に酔う 「
         <span className="font-bold">大人の文化祭</span>」
         <br />

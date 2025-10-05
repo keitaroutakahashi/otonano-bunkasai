@@ -1,13 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: rgb(25, 28, 33);
-}
+  /* fontFamily */
+  --font-roboto: "Roboto", sans-serif;
 
-body {
-  /* color: var(--foreground); */
-  /* background: var(--background); */
-  font-family: Arial, Helvetica, sans-serif;
+  /* spacing */
+  --spacing-110: 28rem;
+  --spacing-152: 38rem;
+
+  /* colors */
+  --color-background: rgb(25, 28, 33);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-gray: rgba(130, 130, 130, 1);
+  --color-primary: #48cfcb;
+  --color-secondary: #ff7000;
+  --color-tertiary: rgba(158, 55, 130, 1);
 }
 
 @layer base {
@@ -17,8 +24,8 @@ body {
 }
 
 svg {
-  width: auto !important;
-  height: auto !important;
+  width: auto;
+  height: auto;
 }
 
 /* custom class */
