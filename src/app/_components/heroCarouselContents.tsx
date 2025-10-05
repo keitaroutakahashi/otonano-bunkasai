@@ -2,9 +2,10 @@ import Link from "next/link";
 
 export const contents = [
   {
+    id: 1,
     img: {
-      src: "/images/hero-01.jpg",
-      alt: "Picture of the author",
+      src: "/images/festivals/01/hero.jpg",
+      alt: "第1回大人の文化祭",
     },
     content: () => {
       return (
@@ -20,9 +21,10 @@ export const contents = [
     },
   },
   {
+    id: 2,
     img: {
-      src: "/images/hero-02.jpg",
-      alt: "Picture of the author",
+      src: "/images/festivals/02/hero.jpg",
+      alt: "第2回大人の文化祭",
     },
     content: () => {
       return (
@@ -38,9 +40,10 @@ export const contents = [
     },
   },
   {
+    id: 3,
     img: {
-      src: "/images/hero-03.jpg",
-      alt: "Picture of the author",
+      src: "/images/festivals/03/hero.jpg",
+      alt: "第3回大人の文化祭",
     },
     content: () => {
       return (

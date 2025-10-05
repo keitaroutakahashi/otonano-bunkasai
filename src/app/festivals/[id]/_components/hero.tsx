@@ -24,7 +24,6 @@ export const Hero = ({ festival }: Props) => {
               @{festival.venue.name} {format(festival.eventDate, "YYYY/MM/DD")}
             </span>
           </p>
-          <p className="mt-5 text-sm md:text-base">{festival.titleJa}</p>
         </div>
         <div className="h-40 w-full bottom-0 left-0 absolute bg-linear-to-t from-background pointer-events-none" />
       </div>
