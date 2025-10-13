@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "@/app/globals.css";
+import { Footer } from "@/components/ui/footer/footer";
 
 const roboto = Roboto_Mono({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="ja">
       <body className={`${roboto.variable}  antialiased font-roboto`}>
         {children}
+        <Footer />
       </body>
     </html>
   );

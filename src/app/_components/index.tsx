@@ -1,4 +1,3 @@
-import { Footer } from "@/components/ui/footer/footer";
 import { Festivals } from "@/app/_components/festivals";
 import { HeroCarousel } from "@/app/_components/heroCarousel";
 import { Introduction } from "@/app/_components/introduction";
@@ -16,7 +15,6 @@ export const Index = () => {
         <div className="mt-40 md:mt-80" />
         <Festivals />
       </main>
-      <Footer />
     </div>
   );
 };
