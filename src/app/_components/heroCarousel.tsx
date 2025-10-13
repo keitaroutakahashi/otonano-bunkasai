@@ -5,14 +5,14 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { contents } from "@/app/_components/heroCarouselContents";
 import { HeroCarouselDot } from "@/app/_components/heroCarouselDot";
-import type { CarouselApi } from "@/components/ui/carousel";
+import type { CarouselApi } from "@/components/ui/carousel/carousel";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/components/ui/carousel/carousel";
 
 export const HeroCarousel = () => {
   const [api, setApi] = useState<CarouselApi>();
