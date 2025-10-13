@@ -5,16 +5,14 @@ import { News } from "@/app/_components/news";
 
 export const Index = () => {
   return (
-    <div className="bg-background">
-      <main className="pb-40">
-        <HeroCarousel />
-        <div className="mt-40 md:mt-80" />
-        <Introduction />
-        <div className="mt-40 md:mt-80" />
-        <News />
-        <div className="mt-40 md:mt-80" />
-        <Festivals />
-      </main>
-    </div>
+    <main className="pb-40">
+      <HeroCarousel />
+      <div className="mt-40 md:mt-80" />
+      <Introduction />
+      <div className="mt-40 md:mt-80" />
+      <News />
+      <div className="mt-40 md:mt-80" />
+      <Festivals />
+    </main>
   );
 };

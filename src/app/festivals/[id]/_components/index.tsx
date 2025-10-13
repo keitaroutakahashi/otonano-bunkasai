@@ -16,7 +16,7 @@ type Props = {
 
 export const Index: FC<Props> = ({ festival }) => {
   return (
-    <div className="bg-background">
+    <div className="">
       <Hero festival={festival} />
       <main className="py-40 px-5 max-w-7xl mx-auto">
         <Overview festival={festival} />
