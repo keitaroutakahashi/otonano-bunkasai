@@ -1,14 +1,15 @@
 import { notFound } from "next/navigation";
 import { Index } from "@/app/news/[id]/_components";
-import { getFestivals } from "@/features/festivals/api/api";
 import { microCmsClient } from "@/libs/microcms-client";
-import type { News } from "@/types/news";
+import type { News, NewsResponse } from "@/types/news";
 
 export async function generateStaticParams() {
-  const festivals = getFestivals();
+  const newsList = await microCmsClient.get<NewsResponse>({
+    endpoint: "news",
+  });
 
-  return festivals.map((festival) => ({
-    id: festival.id.toString(),
+  return newsList.contents.map((news) => ({
+    id: news.id,
   }));
 }
 
