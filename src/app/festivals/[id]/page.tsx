@@ -1,6 +1,24 @@
+import type { Metadata, ResolvingMetadata } from "next";
+import { notFound } from "next/navigation";
 import { Index } from "@/app/festivals/[id]/_components";
 import { getFestival, getFestivals } from "@/features/festivals/api/api";
-import { notFound } from "next/navigation";
+
+type Props = {
+  params: Promise<{ id: string }>;
+};
+
+export async function generateMetadata(
+  { params }: Props,
+  _parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const { id } = await params;
+  const festivals = getFestivals();
+  const festival = festivals.find((festival) => festival.id === Number(id));
+
+  return {
+    title: `${festival?.titleJa} | 大人の文化祭`,
+  };
+}
 
 export async function generateStaticParams() {
   const festivals = getFestivals();

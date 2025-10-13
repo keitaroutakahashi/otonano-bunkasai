@@ -8,7 +8,6 @@ import { Overview } from "@/app/festivals/[id]/_components/overview";
 import { Performers } from "@/app/festivals/[id]/_components/performers";
 import { TimeTable } from "@/app/festivals/[id]/_components/timeTable";
 import { Vip } from "@/app/festivals/[id]/_components/vip";
-import { Footer } from "@/components/ui/footer/footer";
 import type { Festival } from "@/data/festivals";
 
 type Props = {
@@ -17,7 +16,7 @@ type Props = {
 
 export const Index: FC<Props> = ({ festival }) => {
   return (
-    <div className="bg-background">
+    <div className="">
       <Hero festival={festival} />
       <main className="py-40 px-5 max-w-7xl mx-auto">
         <Overview festival={festival} />
@@ -48,7 +47,6 @@ export const Index: FC<Props> = ({ festival }) => {
           </>
         )}
       </main>
-      <Footer />
     </div>
   );
 };

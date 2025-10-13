@@ -30,12 +30,12 @@ export const DialogImage = ({
 }: Props) => {
   return (
     <Dialog open={open} onOpenChange={handleClose}>
-      <DialogContent className="max-w-[80vw]">
+      <DialogContent className="max-w-[90vw] md:max-w-[80vw] !bg-neutral-950 border-neutral-800 rounded-md">
         <DialogTitle className="none" />
         <DialogHeader>
           <DialogClose
             onClick={handleClose}
-            className="cursor-pointer flex justify-end size-6 ml-auto"
+            className="cursor-pointer flex justify-end size-6 ml-auto outline-none"
           >
             <X color="#ffffff" size={30} />
           </DialogClose>
@@ -53,8 +53,8 @@ export const DialogImage = ({
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="size-10 md:size-14 rounded-full !bg-[rgba(0,0,0,0.7)] cursor-pointer left-1 md:left-2" />
-          <CarouselNext className="size-10 md:size-14 rounded-full !bg-[rgba(0,0,0,0.7)] cursor-pointer right-1 md:right-2" />
+          <CarouselPrevious className="size-8 md:size-14 rounded-full !bg-[rgba(0,0,0,0.7)] cursor-pointer left-1 md:left-2" />
+          <CarouselNext className="size-8 md:size-14 rounded-full !bg-[rgba(0,0,0,0.7)] cursor-pointer right-1 md:right-2" />
         </Carousel>
       </DialogContent>
     </Dialog>
