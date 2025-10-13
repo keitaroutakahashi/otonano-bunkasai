@@ -66,10 +66,10 @@ export const FESTIVALS = [
         title: PERFORMERS[1].name,
         program: [
           {
-            title: "高嶺の花子さん / back number",
+            title: "高嶺の花子さん/back number",
           },
           {
-            title: "怪獣の花唄 / Vaundy",
+            title: "怪獣の花唄/Vaundy",
           },
         ],
       },
@@ -80,10 +80,10 @@ export const FESTIVALS = [
         title: PERFORMERS[2].name,
         program: [
           {
-            title: "西荻窪 / ひらけん",
+            title: "西荻窪/ひらけん",
           },
           {
-            title: "芦ノ湖のこのこ / ひらけん",
+            title: "芦ノ湖のこのこ/ひらけん",
           },
         ],
       },
@@ -94,7 +94,7 @@ export const FESTIVALS = [
         title: PERFORMERS[3].name,
         program: [
           {
-            title: "美少女無罪♡パイレーツ / 宝鐘マリン",
+            title: "美少女無罪♡パイレーツ/宝鐘マリン",
           },
         ],
       },
@@ -134,7 +134,7 @@ export const FESTIVALS = [
         title: PERFORMERS[0].name,
         program: [
           {
-            title: "LOVE YOU ONLY / TOKIO",
+            title: "LOVE YOU ONLY/TOKIO",
           },
         ],
       },
@@ -213,7 +213,7 @@ export const FESTIVALS = [
         title: PERFORMERS[6].name,
         program: [
           {
-            title: "ギリギリガガンガン / ザ・クロマニヨンズ",
+            title: "ギリギリガガンガン/ザ・クロマニヨンズ",
           },
         ],
       },
@@ -224,7 +224,7 @@ export const FESTIVALS = [
         title: PERFORMERS[2].name,
         program: [
           {
-            title: "西荻窪 / ひらけん",
+            title: "西荻窪/ひらけん",
           },
         ],
       },
@@ -235,10 +235,10 @@ export const FESTIVALS = [
         title: PERFORMERS[7].name,
         program: [
           {
-            title: "The Feels / TWICE",
+            title: "The Feels/TWICE",
           },
           {
-            title: "Dynamite / BTS",
+            title: "Dynamite/BTS",
           },
         ],
       },
@@ -249,10 +249,10 @@ export const FESTIVALS = [
         title: PERFORMERS[8].name,
         program: [
           {
-            title: "GLAMOROUS SKY / 中島美嘉",
+            title: "GLAMOROUS SKY/中島美嘉",
           },
           {
-            title: "God knows... / 涼宮ハルヒ",
+            title: "God knows.../涼宮ハルヒ",
           },
         ],
       },
@@ -274,13 +274,13 @@ export const FESTIVALS = [
         title: PERFORMERS[1].name,
         program: [
           {
-            title: "怪盗 / back number",
+            title: "怪盗/back number",
           },
           {
-            title: "怪物 / YOASOBI",
+            title: "怪物/YOASOBI",
           },
           {
-            title: "怪獣の花唄 / Vaundy",
+            title: "怪獣の花唄/Vaundy",
           },
         ],
       },
@@ -291,7 +291,7 @@ export const FESTIVALS = [
         title: PERFORMERS[3].name,
         program: [
           {
-            title: "I'm Your Treasure Box / 宝鐘マリン",
+            title: "I'm Your Treasure Box/宝鐘マリン",
           },
         ],
       },
@@ -302,7 +302,7 @@ export const FESTIVALS = [
         title: PERFORMERS[0].name,
         program: [
           {
-            title: "リンダリンダ / THE BLUE HEARTS",
+            title: "リンダリンダ/THE BLUE HEARTS",
           },
         ],
       },
@@ -319,7 +319,7 @@ export const FESTIVALS = [
     id: 3,
     times: 3,
     status: "finished",
-    title: "Festival 2",
+    title: "Festival 3",
     titleJa: "第3回大人の文化祭",
     eventDate: "2025-09-13T00:00:00",
     performers: [
@@ -342,19 +342,36 @@ export const FESTIVALS = [
       groups: 11,
     },
     gallery: [
-      "/images/festivals/02/gallery/01.jpg",
-      "/images/festivals/02/gallery/02.jpg",
-      "/images/festivals/02/gallery/03.jpg",
-      "/images/festivals/02/gallery/04.jpg",
-      "/images/festivals/02/gallery/05.jpg",
-      "/images/festivals/02/gallery/06.jpg",
-      "/images/festivals/02/gallery/07.jpg",
-      "/images/festivals/02/gallery/08.jpg",
-      "/images/festivals/02/gallery/09.jpg",
+      "/images/festivals/03/gallery/01.jpg",
+      "/images/festivals/03/gallery/02.jpg",
+      "/images/festivals/03/gallery/03.jpg",
+      "/images/festivals/03/gallery/04.jpg",
+      "/images/festivals/03/gallery/05.jpg",
+      "/images/festivals/03/gallery/06.jpg",
+      "/images/festivals/03/gallery/07.jpg",
+      "/images/festivals/03/gallery/08.jpg",
+      "/images/festivals/03/gallery/09.jpg",
+      "/images/festivals/03/gallery/10.jpg",
+      "/images/festivals/03/gallery/11.jpg",
+      "/images/festivals/03/gallery/12.jpg",
+      "/images/festivals/03/gallery/13.jpg",
+      "/images/festivals/03/gallery/14.jpg",
+      "/images/festivals/03/gallery/15.jpg",
+      "/images/festivals/03/gallery/16.jpg",
+      "/images/festivals/03/gallery/17.jpg",
     ],
     flyer: "/images/festivals/03/flyer.jpg",
     menu: "/images/festivals/03/menu.jpg",
-    vip: ["Tsuzuki", "Harajima", "Namioka", "Kunikata", "Yuji", "Yanase"],
+    vip: [
+      "Tsuzuki",
+      "Harajima",
+      "Namioka",
+      "Kunikata",
+      "Yuji",
+      "Yanase",
+      "Kanatani",
+      "Tom",
+    ],
     timeTable: [
       {
         id: 10,

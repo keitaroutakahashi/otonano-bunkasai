@@ -26,9 +26,17 @@ export const Footer = () => {
         </div>
         <div className="border-t border-gray" />
         <div className="pt-5 flex justify-between">
-          <p className="text-gray text-xs text-center">©️ 大人の文化祭</p>
+          <p className="text-gray text-xs text-center">
+            ©️大人の文化祭 presented by{" "}
+            <Link href="https://party-co.jp/coen" target="_blank">
+              coen
+            </Link>
+          </p>
           <div className="">
-            <Link href="/">
+            <Link
+              href="https://www.instagram.com/coen.official/"
+              target="_blank"
+            >
               <Image
                 src="/images/sns/instagram.svg"
                 alt="instagram"
